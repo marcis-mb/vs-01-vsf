@@ -10,6 +10,7 @@ import { UrlModule } from '@vue-storefront/core/modules/url'
 import { BreadcrumbsModule } from '@vue-storefront/core/modules/breadcrumbs'
 import { UserModule } from '@vue-storefront/core/modules/user'
 import { CmsModule } from '@vue-storefront/core/modules/cms'
+import { WeatherWidget } from './weather-widget'
 // import { GoogleTagManagerModule } from './google-tag-manager';
 // import { AmpRendererModule } from './amp-renderer';
 import { PaymentBackendMethodsModule } from './payment-backend-methods'
@@ -22,6 +23,7 @@ import { registerModule } from '@vue-storefront/core/lib/modules'
 
 // TODO:distributed across proper pages BEFORE 1.11
 export function registerClientModules () {
+  // registerModule(WeatherWidget)
   registerModule(UrlModule)
   registerModule(CatalogModule)
   registerModule(CheckoutModule) // To Checkout
@@ -44,5 +46,5 @@ export function registerClientModules () {
 
 // Deprecated API, will be removed in 2.0
 export const registerModules: VueStorefrontModule[] = [
-  // Example
+  WeatherWidget
 ]
