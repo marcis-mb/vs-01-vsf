@@ -1,4 +1,4 @@
-import { VueStorefrontModule } from '@vue-storefront/core/lib/module'
+import { VueStorefrontModule, VueStorefrontModuleConfig } from '@vue-storefront/core/lib/module'
 import { CatalogModule } from '@vue-storefront/core/modules/catalog'
 import { CatalogNextModule } from '@vue-storefront/core/modules/catalog-next'
 import { CartModule } from '@vue-storefront/core/modules/cart'
@@ -23,7 +23,6 @@ import { registerModule } from '@vue-storefront/core/lib/modules'
 
 // TODO:distributed across proper pages BEFORE 1.11
 export function registerClientModules () {
-  // registerModule(WeatherWidget)
   registerModule(UrlModule)
   registerModule(CatalogModule)
   registerModule(CheckoutModule) // To Checkout
@@ -41,10 +40,11 @@ export function registerClientModules () {
   registerModule(CmsModule)
   registerModule(NewsletterModule)
   registerModule(InitialResourcesModule)
+  registerModule(WeatherWidget)
   // registerModule(DeviceModule)
 }
 
 // Deprecated API, will be removed in 2.0
 export const registerModules: VueStorefrontModule[] = [
-  WeatherWidget
+  // Example
 ]

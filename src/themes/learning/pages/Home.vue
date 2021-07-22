@@ -1,6 +1,5 @@
 <template>
   <div id="home">
-    <weather-widget limit="8" />
     <head-image />
     <promoted-offers />
 
@@ -65,7 +64,6 @@ export default {
     ProductListing,
     PromotedOffers,
     TileLinks,
-    WeatherWidget,
     LazyHydrate
   },
   computed: {

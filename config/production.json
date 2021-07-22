@@ -1,0 +1,9 @@
+{
+  "theme": "@vue-storefront/theme-learning",
+  "weather": {
+    "endpoint": {
+      "current": "http://magento.local:8080/api/ext/weather-widget/current",
+      "forecast": "http://magento.local:8080/api/ext/weather-widget/forecast"
+    }
+  }
+}

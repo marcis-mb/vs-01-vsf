@@ -9,6 +9,7 @@ const Compare = () => import(/* webpackChunkName: "vsf-compare" */ 'theme/pages/
 const MyAccount = () => import(/* webpackChunkName: "vsf-my-account" */ 'theme/pages/MyAccount.vue')
 const Static = () => import(/* webpackChunkName: "vsf-static" */ 'theme/pages/Static.vue')
 const ResetPassword = () => import(/* webpackChunkName: "vsf-reset-password" */ 'theme/pages/ResetPassword.vue');
+const WeatherInfo = () => import(/* webpackChunkName: "weather-widget" */ 'theme/pages/WeatherInfo.vue');
 
 let routes = [
   { name: 'home', path: '/', component: Home, alias: '/pwa.html' },
@@ -45,6 +46,7 @@ let routes = [
   { name: 'category', path: '/c/:slug', component: Category },
   { name: 'cms-page', path: '/i/:slug', component: CmsPage },
   { name: 'create-password', path: '/create-password', component: ResetPassword },
+  { name: 'weather-info', path: '/weather-info', component: WeatherInfo },
   { name: 'page-not-found', path: '*', component: PageNotFound }
 ]
 
